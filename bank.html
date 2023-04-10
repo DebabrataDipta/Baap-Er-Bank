@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-4 p-2">Let's get some <span class="font-semibold text-purple-600">Moneeeey!!!!</span></h1>
+    </header>
+    <main>
+        <div class="bg-lime-200 py-5 mt-12">
+        <section class="py-14 px-9">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+            <div class=" bg-indigo-600 px-14 py-8 mt-6 rounded-lg me-2">
+                <h1 class="text-4xl text-white">Deposit</h1>
+                <h2 class="text-4xl text-white">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class=" bg-amber-400 px-14 py-8 mt-6 rounded-lg me-2">
+                <h1 class="text-4xl text-white">Withdraw</h1>
+                <h2 class="text-4xl text-white">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class=" bg-blue-500 px-14 py-8 mt-6 rounded-lg me-2">
+                <h1 class="text-4xl text-white">Balance</h1>
+                <h2 class="text-4xl text-white">$<span id="balance-total">1240</span></h2>
+            </div>
+        </div>
+        </section>
+        <!-- deposit and Withdraw -->
+        <section class="mt-12 mb-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class=" bg-cyan-700 px-14 py-8 mt-6 rounded-lg me-2">
+                    <h1 class="text-4xl text-white mb-5">Deposit Arena</h1>
+                    <input type="text" id="deposit-field" class="mb-5 p-1.5 rounded-lg w-9/12" placeholder="Enter the amount"> <br>
+                    <button id="deposit-btn" class="rounded-lg text-xl bg-cyan-900 hover:bg-sky-950 text-white px-5 py-2 ">Confirm</button>
+                </div>
+                <div class=" bg-blue-900 px-14 py-8 mt-6 rounded-lg me-2">
+                    <h1 class="text-4xl text-white mb-5">Withdrawal Arena</h1>
+                    <input id="withdraw-field" type="text" class="mb-5 p-1.5 rounded-lg w-9/12" placeholder="Enter the amount"> <br>
+                    <button id="Withdraw-btn" class="rounded-lg text-xl bg-indigo-950 hover:bg-blue-950 text-white px-5 py-2 ">Confirm</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+    <!-- js part  -->
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
